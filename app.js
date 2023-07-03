@@ -26,7 +26,8 @@ const afficherContenu = async()=>{
             creationH2.style.textAlign='center';
             creationH2.style.color="white";
             creationH2.style.fontSize="25px";
-            creationH2.style.paddingBottom='10px'
+            creationH2.style.paddingBottom='10px';
+            creationH2.style.backdropFilter="blur(5px)"
     
             const creationElementDrapeau=document.createElement("img");
             creationElementDrapeau.setAttribute('src',`${data[creationRandomNumber].flags.png}`);
