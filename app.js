@@ -55,6 +55,11 @@ const afficherContenu = async()=>{
             creationDeuxiemeElementP.style.fontSize="calc(12px + 2vh)";
             creationDeuxiemeElementP.style.textAlign="center";
 
+            recuperationDivEl.style.display="flex";
+            recuperationDivEl.style.justifyContent="center";
+            recuperationDivEl.style.alignItems="center";
+            recuperationDivEl.style.flexDirection="column";
+        
             let recuperationBody=document.querySelector('body');
             recuperationBody.style.backgroundImage="url(img/monde.jpg)";
             recuperationBody.style.height="100vh"
