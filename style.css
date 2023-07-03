@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fontSizeTitre:calc(20px + 2vh)
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-image:url(img/monde.jpg);
+    background-size:cover;
+    width:100%;
+   
+}
+
+h1{
+    /* text-align:center; */
+    font-family: 'Pacifico', cursive;
+    font-size:var(--fontSizeTitre);
+    color:#fff;
+    backdrop-filter: blur(10px);
+}
+
+button{
+   margin:auto;
+   padding:10px 20px;
+   cursor:pointer;
+   margin:20px;
+   background:transparent;
+   font-size:25px;
+   color:#fff;
+   backdrop-filter: blur(10px);
+   position:relative;
+   z-index:3;
+   transition:color 0.5s;
+   overflow:hidden;
+}
+
+button:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    z-index:-1;
+    transform:translateX(-100%);
+    transition:transform 0.5s;
+}
+
+button:hover:before{
+    transform:translateX(0);
+}
+
+button:hover{
+    color:black;
+}
+
+/**********************MEDIA QURERIES **********************/
+
+@media screen and (max-width:364px){
+    img{
+        width:70%
+    }
+}
