@@ -63,7 +63,7 @@ const afficherContenu = async()=>{
         
             let recuperationBody=document.querySelector('body');
             recuperationBody.style.backgroundImage="url(img/monde.jpg)";
-            recuperationBody.style.height="100vh"
+            recuperationBody.style.minHeight="100vh"
 
     
           
