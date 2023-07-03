@@ -15,7 +15,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    background-image:url(img/monde.jpg);
+    background-color:rgb(162, 162, 189);
+    /* background-image:url(img/monde.jpg); */
     background-size:cover;
     width:100%;
    

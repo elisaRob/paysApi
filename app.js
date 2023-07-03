@@ -32,7 +32,8 @@ const afficherContenu = async()=>{
             creationElementDrapeau.setAttribute('src',`${data[creationRandomNumber].flags.png}`);
             recuperationDivEl.appendChild(creationElementDrapeau);
             creationElementDrapeau.style.paddingBottom='10px';
-            
+
+
     
             const creationElementP=document.createElement('p');
             const creationContenuContinent=document.createTextNode(`The continent is:${data[creationRandomNumber].continents[0]} `);
@@ -52,7 +53,11 @@ const afficherContenu = async()=>{
             creationDeuxiemeElementP.style.fontSize="25px";
             creationDeuxiemeElementP.style.paddingBottom='10px';
             creationDeuxiemeElementP.style.fontSize="calc(12px + 2vh)";
-            creationDeuxiemeElementP.style.textAlign="center"
+            creationDeuxiemeElementP.style.textAlign="center";
+
+            let recuperationBody=document.querySelector('body');
+            recuperationBody.style.backgroundImage="url(img/monde.jpg)";
+            recuperationBody.style.height="100vh"
 
     
           
